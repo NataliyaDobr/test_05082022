@@ -2,12 +2,14 @@
 string[] ArrayString2 = new string[ArrayString1.Length];
 
 void NewArray(string[] array1, string[] array2)
-{
+{ 
+    int j = 0;
     for (int i = 0; i < ArrayString1.Length; i++)
     {
     if(ArrayString1[i].Length <= 3)
         {
-        ArrayString2[i] = array1[i];
+        ArrayString2[j] = array1[i];
+        j++;
         }
     }
 }
